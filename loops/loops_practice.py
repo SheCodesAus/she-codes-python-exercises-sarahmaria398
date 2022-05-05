@@ -21,6 +21,8 @@
 # for i in range(num+1):
 #     total += i
 #     print(total)
+
+
 # need to rejig to only print the remaining output, not all the middle digits too
 
 # for loop each number counting up to that number
@@ -47,8 +49,8 @@
 #     ["Ivy", "noreply@goldendreamers.xyz"],
 # ]
 
-# for list in mailing_list:
-#     print(f"{list[0]} : {list[1]}")
+# for item in mailing_list:
+#     print(f"{item[0]} : {item[1]}")
 
 # success!
 
@@ -126,3 +128,73 @@
 # while guess == selected_number:
 #     print("Correct!")
 #     break
+
+
+# Loops: Extension
+
+# Exercise: 1
+# groceries = [
+#     ["Baby Spinach", 2.78],
+#     ["Hot Chocolate", 3.70],
+#     ["Crackers", 2.10],
+#     ["Bacon", 9.00],
+#     ["Carrots", 0.56],
+#     ["Oranges", 3.08]
+# ]
+
+# number_units = []
+# input = int(input("Enter the number of units you have bought of each item "))
+# number_units.extend(input)
+# print(number_units)
+
+# for unit in number_units:
+#     for cost in groceries[1]:
+#         print(unit * cost)
+
+# number_units = []
+# spinach = float(input("How many? "))
+# number_units.append(spinach)
+
+# chocolate = float(input("How many? "))
+# number_units.append(chocolate)
+# number_units.append(input("How many? "))
+# number_units.append(input("How many? "))
+# number_units.append(input("How many? "))
+# number_units.append(input("How many? "))
+# number_units.append(input("How many? "))
+
+# for unit in number_units:
+#     for type in groceries:
+#         for cost in range(type[1]):
+#             total = unit*cost
+# print(total)
+
+# Failed
+
+# Exercise: 2
+
+# string = input("enter a word ")
+
+# for letter in string:
+#     print(f"{string.index(letter)} {(letter)}")
+
+# boom chaka laka!
+
+# Exercise: 3
+# num = int(input("Enter a number"))
+
+# for i in range(num+1):
+#     print(f"*" * i)
+
+# Exercise : 4
+# num = int(input("Enter a number"))
+
+# for i in range(num+1):
+# print(f"" * num+1 + "*" * i)
+
+
+# for i in range(num+1):
+#     space = "" * (num+1) - 2
+#     print(sapce)
+
+# failed
