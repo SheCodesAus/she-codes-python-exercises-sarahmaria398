@@ -1,4 +1,5 @@
 #Program :1
+# Kate’scat,Roary,lovescatchingmoths.WriteaprogramthatdetermineswhetherornotitistimeforRoarycatch moths.
 # moths_in_house = False
 
 # if moths_in_house:
@@ -7,7 +8,7 @@
 # else:
 #     print("No threats detected")
 
-#Program :2
+# Program :2 ButRoarycan’tactuallygetthemothsbyherself!Amendthepreviousprogramtodeterminewhetherornot it is time for Roary to go moth hunting
 # moths_in_house = False
 # mitch_is_home = False
 
@@ -23,7 +24,7 @@
 # elif not moths_in_house and mitch_is_home:
 #     print("Climb on Mitch")
 
-#Program :3
+# Program :3 Write a program that implements the algorithmfor Red Light Cameras.
 # light_colour = "Red"
 # car_detected = False
 
@@ -45,7 +46,7 @@
 # elif light_colour == "Amber" and not(car_detected):
 #     print("Do nothing")
 
-# Program: 4
+# Program: 4 Writeaprogramthataskstheuserfortheirheight,anddetermineswhetherornottheyaretallenoughtoride the rollercoaster, which has a height requirement of 120cms
 # height = input("What is your height? ")
 # height = int(height)
 # if height >= 120:
@@ -54,7 +55,7 @@
 # else:
 #     print("Sorry, not today :(")
 
-# Program: 5
+# Program: 5 Writeaprogramthataskstheusertoentertheirusernameandpassword,andoutputsasuccessmessage if they are correct, or a failure message if they are incorrect
 # username = "fleur"
 # password = "password123"
 
@@ -67,7 +68,7 @@
 # else:
 #     print("Incorrect!")
 
-# Program: 6
+# Program: 6 Writeaprogramthataskstheusertoentertheiremailaddressandcheckswhetheritisvalidornot.Forthepurposeofthisexercise,youcanmaketheassumptionthatavalidemailaddresscontainsa“@”symboland a “.” symbol
 # email = input("Enter your email ")
 # dot = "."
 # at = "@"
