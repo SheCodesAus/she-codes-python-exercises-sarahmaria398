@@ -72,10 +72,37 @@ import os
 # Blue = 0
 # Yellow = 0
 
-# with open("csv_files/colours_20.csv") as csv_file:
+# with open("csv_files/colours_213.csv") as csv_file:
 #     file_reader = csv.reader(csv_file, delimiter=",")
 
 #     next(file_reader)
+
+#     for line in file_reader:
+#         for word in line:
+#             if "yellow" in word:
+#                 Yellow += 1
+#                 # print("yes")
+
+#             elif "red" in word:
+#                 Red += 1
+
+#             elif "blue" in word:
+#                 Blue += 1
+
+#             elif "green" in word:
+#                 Green += 1
+
+
+# print(f"Yellow: {Yellow}")
+# print(f"Yellow: {Red}")
+# print(f"Yellow: {Green}")
+# print(f"Blue: {Blue}")
+
+#     if word == "yellow":
+#         Yellow += 1
+
+#     else:
+#         print("no")
 
 # # yellow = file_reader.count("yellow")
 
@@ -92,28 +119,35 @@ import os
 
 # fail
 
+
 # 5)galaxies.py contains dataabout82differentgalaxiesandtheirvelocities(km/sec).Usingthisdata,outputthe galaxy with the slowest velocity, and the galaxy with the highest velocity.
 
-# with open("csv_files/galaxies.csv") as csv_file:
-#     file_reader = csv.reader(csv_file)
+with open("csv_files/galaxies.csv") as csv_file:
+    file_reader = csv.reader(csv_file)
 
-#     next(file_reader)
+    next(file_reader)
 
-#     for line in file_reader:
-#         line.sort()
-#     # print(f"{line[0]} {line[1]}")
+    minimum = 0
+    line_number = 0
+    for line in file_reader:
 
-#     print(line)
+        if minimum == 0:
+            minimum = int(line[1])
 
-# ----------------
+        elif minimum >= int(line[1]):
+            minimum = int(line[1])
+            line_number = int(line[0])
 
-# with open("csv_files/colours_20.csv") as csv_file:
-#     file_reader = csv.reader(csv_file)
+    # maximum = 0
+    # line_number_max = 0
+    # for line in file_reader:
 
-#     next(file_reader)
+    #     if maximum == 0:
+    #         maximum = int(line[1])
 
-#     with open("colours101.csv", "w") as new_file:
-#         csv_writer = csv.writer(new_file, delimiter=' ')
+    #     elif maximum >= int(line[1]):
+    #         maximum = int(line[1])
+    #         line_number_max = int(line[0])
 
-#         for line in file_reader:
-#             csv_writer.writerow(line)
+    print(f"Galaxy {line_number} has a min velocity of : {minimum}km.sec.")
+    # print(f"Galaxy {line_number_max} has a max velocity of : {maximum}km.sec.")

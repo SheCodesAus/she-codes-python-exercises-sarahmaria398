@@ -12,27 +12,28 @@
 # Exercise 2:
 # Writeafunctionthatacceptsoneparameter(aninteger)andreturnsTruewhenthatparameterisoddandFalse when that parameter is even.
 
+# num = int(input("enter a number "))
 
-def odd_even(num):
-    odd = 1 += 2
-    even = 0 += 2
+# if num % 2 == 0:
+#     print("False")
 
-    if num == odd:
-        print(False)
+# else:
+#     print("True")
 
-    if num == even:
-        print(True)
+
+# def odd_even(num):
+#     if num/2 ==
 
 #Exercise: 3
 # Write a function that returns the mean of a listof numbers
 
-# numbers = []
+# numbers = [10, 5, 6]
 
-
-# def mean(num):
+# def mean(list):
 #     total = 0
-#     for i in num:
+#     for i in list:
 #         total += i
+#     return total/(len(list))
 
 
 # print(mean(numbers))
@@ -45,4 +46,4 @@ def odd_even(num):
 #     return result
 
 
-# print(f"${total(3.79, 1)}")
+# print(f"${total(4.25, 3)}")

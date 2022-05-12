@@ -70,7 +70,7 @@
 # while num != "":
 #     int_num = int(num)
 #     print(num)
-#     total = total + int_num
+#     total += int_num
 #     num = input("Enter a number ")
 
 # else:
@@ -230,7 +230,9 @@
 # num = int(input("Enter a number"))
 
 # for i in range(num+1):
-# print(f"" * num+1 + "*" * i)
+#     space = " " * i
+#     star = "*" * i
+#     print(f"{space} {star}")
 
 
 # for i in range(num+1):
