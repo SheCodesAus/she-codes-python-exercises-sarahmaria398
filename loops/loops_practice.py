@@ -103,6 +103,7 @@
 
 # Exercise: 2 Ask the user to enter a number. Print all the odd numbers between 0 and that number (inclusive).
 
+# originally started with a for loop
 # num = int(input("Enter a number "))
 
 # list = []
@@ -110,10 +111,23 @@
 #     list.append(i)
 # print(list[1: -1: 2])
 
-# I used a for loop not while loop here.
-# enter a number
-# assign all numbers from 0 to this number, inclusive, in to a list
-# print from the list every odd number
+# and then i implemented it in to the while loop
+
+# num = int(input("Enter a number "))
+
+# while num % 2 == 0:
+#     list = []
+#     for i in range(num+2):
+#         list.append(i)
+#     print(list[1: -1: 2])
+#     break
+
+# else:
+#     list = []
+#     for i in range(num+2):
+#         list.append(i)
+#     print(list[1: -1: 2])
+
 
 # Exercise : 3 Select a number. Ask the user to enter a number, output whether their number is less than or greater than
 # the selected number. Repeat this process until the user guesses the correct numbe

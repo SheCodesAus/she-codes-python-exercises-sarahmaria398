@@ -122,32 +122,50 @@ import os
 
 # 5)galaxies.py contains dataabout82differentgalaxiesandtheirvelocities(km/sec).Usingthisdata,outputthe galaxy with the slowest velocity, and the galaxy with the highest velocity.
 
-with open("csv_files/galaxies.csv") as csv_file:
-    file_reader = csv.reader(csv_file)
+# with open("csv_files/galaxies.csv") as csv_file:
+#     file_reader = csv.reader(csv_file)
 
-    next(file_reader)
+#     next(file_reader)
 
-    minimum = 0
-    line_number = 0
-    for line in file_reader:
+#     minimum = 0
+#     line_number = 0
 
-        if minimum == 0:
-            minimum = int(line[1])
+#     for line in file_reader:
 
-        elif minimum >= int(line[1]):
-            minimum = int(line[1])
-            line_number = int(line[0])
+#         if minimum == 0:
+#             minimum = int(line[1])
 
-    # maximum = 0
-    # line_number_max = 0
-    # for line in file_reader:
+#         elif minimum >= int(line[1]):
+#             minimum = int(line[1])
+#             line_number = int(line[0])
 
-    #     if maximum == 0:
-    #         maximum = int(line[1])
+# maximum = 0
+# line_number_max = 0
+# for line in file_reader:
 
-    #     elif maximum >= int(line[1]):
-    #         maximum = int(line[1])
-    #         line_number_max = int(line[0])
+#     if maximum == 0:
+#         maximum = int(line[1])
 
-    print(f"Galaxy {line_number} has a min velocity of : {minimum}km.sec.")
-    # print(f"Galaxy {line_number_max} has a max velocity of : {maximum}km.sec.")
+#     elif maximum >= int(line[1]):
+#         maximum = int(line[1])
+#         line_number_max = int(line[0])
+
+# print(f"Galaxy {line_number} has a min velocity of : {minimum}km.sec.")
+# print(f"Galaxy {line_number_max} has a max velocity of : {maximum}km.sec.")
+
+def load_data_from_csv(csv_file):
+
+    with open(csv_file) as file:
+        file_reader = csv.reader(file)
+        next(file_reader)
+        list = []
+
+        for row in file_reader:
+            if len(row) == 0:
+                continue
+            list.append(row)
+
+    return list
+
+
+load_data_from_csv(example)

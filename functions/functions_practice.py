@@ -29,6 +29,7 @@
 
 # numbers = [10, 5, 6]
 
+
 # def mean(list):
 #     total = 0
 #     for i in list:
@@ -47,3 +48,47 @@
 
 
 # print(f"${total(4.25, 3)}")
+
+
+# from datetime import datetime
+
+
+# def convert_date(iso_string):
+#     dt = datetime.datetime('%Y %m %d')
+#     return dt
+
+#     # d = datetime.fromisoformat(iso_string[:-1]).astimezone(timezone.utc)
+#     # d.strftime('%Y-%m-%d %H:%M:%S')
+#     # # date = datetime.strptime(iso_string, '%Y-%m-%dT%X+%X')
+#     # return(date.strftime('%Y %m %d'))
+
+
+# print(convert_date("2021-07-05T07:00:00+08:00"))
+
+
+# numbers = [1, 2, -5, 3]
+
+# min_value = numbers[0]
+# min_location = 0
+# index = 0
+
+# for num in numbers:
+
+#     if num < min_value:
+#         min_value = num
+#         min_location = index
+#     index += 1
+
+# print(min_value, min_location)
+from datetime import datetime
+# d = datetime.strptime("2021-07-05T07:00:00+08:00", "%Y-%m-%dT%H:%M+%H:%M")
+# print(d)
+
+# datetime.strptime(
+#     "2008-09-03T20:56:35.450686Z", "%Y-%m-%dT%H:%M:%S.%fZ")
+
+# d = datetime.strftime("2008-09-03T20:56:35.450686Z", "%Y-%m-%d")
+# print(d)
+
+d = datetime.strptime('2019-01-04T16:41:24+0200', "%Y-%m-%dT%H:%M:%S%z")
+print(d)
