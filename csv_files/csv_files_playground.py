@@ -153,19 +153,19 @@ import os
 # print(f"Galaxy {line_number} has a min velocity of : {minimum}km.sec.")
 # print(f"Galaxy {line_number_max} has a max velocity of : {maximum}km.sec.")
 
-def load_data_from_csv(csv_file):
+# def load_data_from_csv(csv_file):
 
-    with open(csv_file) as file:
-        file_reader = csv.reader(file)
-        next(file_reader)
-        list = []
+#     with open(csv_file) as file:
+#         file_reader = csv.reader(file)
+#         next(file_reader)
+#         list = []
 
-        for row in file_reader:
-            if len(row) == 0:
-                continue
-            list.append(row)
+#         for row in file_reader:
+#             if len(row) == 0:
+#                 continue
+#             list.append(row)
 
-    return list
+#     return list
 
 
-load_data_from_csv(example)
+# load_data_from_csv(example)

@@ -1,3 +1,8 @@
+import csv
+from datetime import datetime
+from email import header
+from operator import indexOf
+
 
 # Functions
 # Exercise 1: Write a function that takes a temperature in fahrenheitand returns the temperature in celsius.
@@ -80,15 +85,3 @@
 #     index += 1
 
 # print(min_value, min_location)
-from datetime import datetime
-# d = datetime.strptime("2021-07-05T07:00:00+08:00", "%Y-%m-%dT%H:%M+%H:%M")
-# print(d)
-
-# datetime.strptime(
-#     "2008-09-03T20:56:35.450686Z", "%Y-%m-%dT%H:%M:%S.%fZ")
-
-# d = datetime.strftime("2008-09-03T20:56:35.450686Z", "%Y-%m-%d")
-# print(d)
-
-d = datetime.strptime('2019-01-04T16:41:24+0200', "%Y-%m-%dT%H:%M:%S%z")
-print(d)
