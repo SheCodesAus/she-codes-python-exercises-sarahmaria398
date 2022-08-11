@@ -1,6 +1,6 @@
 # chilli_wishlist = ["igloo", "chicken", "donut toy", "cardboard box"]
 
-# # print(chilli_wishlist[0:4:2])
+# print(chilli_wishlist[0:4:2])
 # # print(chilli_wishlist[1])
 # # chilli_wishlist.append("dig mat")
 # chilli_wishlist[2] = "ball"

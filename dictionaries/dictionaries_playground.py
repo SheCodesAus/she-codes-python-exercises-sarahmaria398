@@ -2,7 +2,7 @@
 # keys are unique
 # keys need to immutable
 # unordered
-# students = {"sarah": 123, "bob": 456, "Dani": 789}
+students = {"sarah": 123, "bob": 456, "Dani": 789}
 # print(students)
 
 # students["Donna"] = 189  # adding a key-value pair

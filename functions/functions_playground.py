@@ -29,3 +29,38 @@
 
 
 # print(calculate_mean(5, 8))
+
+list = [1, 12]
+
+
+# def plusOne(digits):
+#     num = digits[-1]
+#     num += 1
+#     digits.pop()
+#     digits.append(num)
+
+#     if digits[-1] >= 10:
+#         str(digits[-1])
+
+#     return digits
+
+
+def plusOne(digits):
+    list = []
+    for i in digits:
+        list.append(str(i))
+
+    for i in list:
+        list = list.join()
+    # for i in list:
+    #     for j in i:
+    #         if j.length >= 2:
+    #             j.split()
+    #         list.append(j)
+    # list.append(str(i))
+    # list.join()
+
+    return list
+
+
+print(plusOne(list))

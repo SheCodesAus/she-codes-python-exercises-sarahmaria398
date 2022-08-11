@@ -65,14 +65,17 @@ with open("csv_files\colours_20_simple.csv") as csv_file:
     next(file_reader)
     list = []
     colour_data = {}
+    hex = []
+    index = 0
 
     for line in file_reader:
         list.append(line[0:3:2])
-        colour_data[line[1]] = line[2]
+        hex.append(line[1])
 
-    for i in list:
-        for key, value in colour_data.items():
-            colour_data[key] = i
-            # I'm close but not quite: its all traffic yellow
+    for hex in hex:
+        i = index
+        colour_data[hex] = list[i]
+        index += 1
+
 
 print(colour_data)

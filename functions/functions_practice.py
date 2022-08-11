@@ -85,3 +85,56 @@ from operator import indexOf
 #     index += 1
 
 # print(min_value, min_location)
+
+
+# def bonus_time(salary, bonus):
+#     return "${}".format(salary * (10 if bonus else 1))
+# # not mine
+
+
+# print(int(3))
+# print(int('3'))
+
+# arr = ['5', '0', 9, 3, 2, 1, '9', 6, 7]
+
+
+# def sum_mix(arr):
+#     # list = []
+#     num = arr[0]
+#     int(num)
+#     return print(type(num))
+# result = 0
+# for i in arr:
+#     if type(i) != int:
+#         int(i)
+#     print(type(i))
+
+# result += i
+# list.append(i)
+# print(i)
+# list.append(i)
+#     return result
+
+
+# sum_mix(arr)
+
+
+bob = [5, 10, 36, 9, 10]
+
+
+def sum_two_smallest_numbers(numbers):
+    list = []
+    lowest_num = 0
+
+    for i in numbers:
+        if i < lowest_num:
+            lowest_num = i
+            list.append(i)
+            numbers.remove(i)
+        else:
+            list.append(lowest_num)
+
+    return list
+
+
+print(sum_two_smallest_numbers(bob))
