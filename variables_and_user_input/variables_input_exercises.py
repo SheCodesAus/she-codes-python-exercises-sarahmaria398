@@ -1,24 +1,29 @@
-
-# Program 1  : Adding two inputs
+# Program 1: takes two numbers and outputs sum
 # num1 = input("Enter a number")
-# num2 = input("Enter another number")
-# print(float(num1)+float(num2))
+# num2 = input("Enter a number")
 
-# Program 2 :
+# total = float(num1) + float(num2)
+
+# print(total)
+
+# Program 2 : takes two numbers and outputs equation
 # num1 = input("Enter a number")
-# num2 = input("Enter another number")
-# result = float(num1)*float(num2)
-# print(f"{num1} * {num2} = {result}")
+# num2 = input("Enter a number")
 
-# Program 3 :
-# kms = input("How many kilometer?")
-# kms = float(kms)
-# metres = int(kms)*1000
-# cms = int(kms)*100000
-# print(f"{kms}km = {metres}m")
-# print(f"{kms}km = {cms}cm")
+# total = float(num1) * float(num2)
 
-# Program: 4
-# name = input("What is your name?")
-# height = input("How tall are you (cms)?")
-# print(f"{name} is {height}cms tall")
+# print(total)
+
+# Program takes distance in kms, goes to cm and metres
+# km = input("Enter a distance in km's ")
+# print(f"How many kilometres? {km}")
+# metres = int(km) * 1000
+# print(f"{float(km)}km = {metres}m")
+# cm = int(metres) * 100
+# print(f"{float(km)}km = {cm}cm")
+
+
+# Program 4
+# name = input("What is your name ")
+# height = input("How tall are you(cms)?")
+# print(f"{name} is {height}cms tall.")

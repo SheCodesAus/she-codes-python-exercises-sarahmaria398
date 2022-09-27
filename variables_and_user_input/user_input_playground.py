@@ -1,6 +1,7 @@
 # name = input("What is your name ")
-# print(name)
+# hobby = input("Do you have a favourite hobby? ")
+# print(f"This is {name}, who likes {hobby}")
 
-number = input("Enter a number ")
-# print(number + 5) this wont work as input value is string, need ot typecast
-print(int(number) + 5)
+# age = input(f"Hi {name}, how old are you? ")
+# years_until_100 = 100 - int(age)
+# print(f"Wow, {name}! You'll be 100 in {years_until_100} years!")
