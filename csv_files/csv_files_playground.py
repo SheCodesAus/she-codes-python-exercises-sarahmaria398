@@ -72,13 +72,34 @@ with open("csv_files/galaxies.csv", encoding="utf-8") as csv_file:
     reader = csv.reader(csv_file)
 
     next(reader)
-
-    min_galaxy = reader[0][0]
-    max_galaxy = reader[0][0]
-    min_velocity = reader[0][1]
-    max_velocity = reader[0][1]
-    index = 1
+    info = []
 
     for line in reader:
-        if min_velocity < reader[index]:
-            index += 1
+        info.append(line)
+
+    max_velocity = 0
+    max_galaxy = 0
+    min_velocity = 0
+    min_galaxy = 0
+
+    if max_velocity == 0:
+
+        max_galaxy = int(info[0][0])
+        max_velocity = int(info[0][1])
+        min_galaxy = int(info[0][0])
+        min_velocity = int(info[0][1])
+
+    if max_velocity > 0:
+        for line in info:
+            if max_velocity < int(line[1]):
+                max_velocity = int(line[1])
+                max_galaxy = int(line[0])
+
+            if min_velocity > int(line[1]):
+                min_velocity = int(line[1])
+                min_galaxy = int(line[0])
+
+
+print(
+    f"Galaxy {max_galaxy} has the max velocity of {max_velocity}/sec",
+    f"Galaxy {min_galaxy} has the min velocity of {min_velocity}/sec")
