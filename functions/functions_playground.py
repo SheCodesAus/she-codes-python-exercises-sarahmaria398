@@ -9,7 +9,7 @@
 # print(temp_in_f(num))
 
 # Program 2
-# num = -5
+# num = 6
 
 
 # def odd_even(i):
@@ -17,6 +17,12 @@
 #         return("even")
 #     else:
 #         return("odd")
+
+# Refactored
+
+# def odd_even(i):
+#     msg = "even" if i % 2 == 0 else "odd"
+#     return msg
 
 
 # print(odd_even(num))
@@ -33,6 +39,7 @@
 
 # print(average(list))
 
+
 # Program 4
 
 # price_per_unit = float(input("what was the price per unit "))
@@ -44,6 +51,18 @@
 #     result = "{:.2f}".format(total)
 #     str(result)
 #     return(f"${result}")
+
+
+# print(total(price_per_unit, num_units))
+
+# Refactored:
+# price_per_unit = float(input("what was the price per unit "))
+# num_units = float(input("what was the num of units "))
+
+
+# def total(price, num):
+#     total = "{:.2f}".format(price*num)
+#     return(f"${str(total)}")
 
 
 # print(total(price_per_unit, num_units))

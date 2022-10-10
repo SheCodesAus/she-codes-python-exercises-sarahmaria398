@@ -6,6 +6,12 @@
 # for item in range(len(list)):
 #     print(list[item])
 
+
+# Refactored
+# for i, list in enumerate(list, 1):
+#     print(i, list)
+
+
 # for item in list:
 #     print(item)
 
@@ -16,12 +22,13 @@
 
 # For loops
 # Program 1
-# num = input("enter a number ")
-# num = int(num)
+# num = int(input("enter a number "))
+
 
 # for i in range(1, num+1):
 #     j = i * (num)
 #     print(f"{num} * {i} = {j}")
+
 
 # Program 2
 # num = input("enter a num to sum to ")
@@ -41,6 +48,13 @@
 #     total = total + i
 
 # print(total)
+
+
+# Not even refactored, just using a function
+# random_numbers = [-3, -5, 9, 1]
+
+# print(sum(random_numbers))
+
 
 # Program 4
 # mailing_list = [
@@ -79,6 +93,7 @@
 #         print(total)
 
 #     getConcatenation(nums)
+
 
 # -----------
 # Program 2
